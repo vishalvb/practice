@@ -1,0 +1,6 @@
+
+num = 3
+print(type(num))
+
+num1 = 2.2
+print(type(num1))
