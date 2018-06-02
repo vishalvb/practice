@@ -1,9 +1,21 @@
 #decorators
 
-def outer():
-	messge = 'Hi'
-	def inner():
-		print(messge)
-	return inner()
+def decorator(myfunc):
+	def wrapper(*args):
+		return myfunc(*args)
+	return wrapper
 
-outer()
+
+@decorator
+def display():
+	print('display function')
+
+	
+@decorator
+def info(name, age):
+	print('name is {} and age is {}'.format(name,age))
+
+info('john', 23)
+#hi = decorator(display)
+#hi()
+display()
