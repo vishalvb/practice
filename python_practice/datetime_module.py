@@ -41,6 +41,39 @@ print('utcnow', dt_utcnow)
 import pytz
 dt  = datetime.datetime(2016,6,4,10,6,23,tzinfo = pytz.UTC)
 print('time is ', dt)
+dt_now = datetime.datetime.now(tz = pytz.UTC)
+print('dt now using pytz', dt_now)
+
+dt_mnt = dt_now.astimezone(pytz.timezone('US/Mountain'))
+print('mountain time zone', dt_mnt)
+
+print('all time zones')
+
+#for tz in pytz.all_timezones:
+#	print(tz)
+print('converting naive datetime to timezone aware datetime')
+dt_mnt = datetime.datetime.now()
+print('naive time is',dt_mnt)
+mnt_tz = pytz.timezone('US/Mountain')
+
+print('converted ',mnt_tz.localize(dt_mnt))
+dt = datetime.datetime.now(tz = pytz.timezone('US/Mountain'))
+print('best day to use is passing timezone in now method',dt)
+print('converting to iso format',dt.isoformat())
+print('formatting', dt.strftime('%B %d %Y'))
+
+dt_str = 'June 06 2016'
+print('string is', dt_str)
+print('datetime is', datetime.datetime.strptime(dt_str,'%B %d %Y'))
+
+
+
+
+
+
+
+
+
 
 
 
