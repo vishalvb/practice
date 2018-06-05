@@ -1,0 +1,6 @@
+#random number generation
+
+import random
+
+value = random.random()
+print('random value is ', value)
