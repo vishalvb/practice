@@ -102,3 +102,16 @@ matches = pattern.finditer(emails)
 for match in matches:
 	print(match)
 
+urls = '''
+https://www.google.com
+http://youtube.com
+https://www.corey.com
+https://www.nasa.gov
+'''
+print('\nmatching urls')
+
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.finditer(urls)
+for match in matches:
+	print(match)
+
