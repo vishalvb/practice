@@ -1,0 +1,81 @@
+I am not ble to open up wht why why why 
+
+
+I need to speak something so that I can improve my communication
+
+let's see what happens today. I am not sure
+ This session is about the computer vision and convolutional network. I am here to gain some knowledge, but also 
+ to improve my communicatio. But I don't know how to initiate. I am alone here. 
+ 
+ My day had started with a telephonic interview. It went well. After that I had little headache but I still managed to reach 
+ to the devfest conference. I don't see any student here. If there are then I am not able to find it out. There are 
+ 
+ joseph
+ 
+ computer vision and using convulitoinal neural network and successfully applly to some problem
+ 
+ continuation network 
+ tensorflow
+ CNN
+ two things is
+ what are cnn
+ where does neural network 
+ 
+ examples 
+ 
+ what is computer vision
+ enabling computer to create  inferense based on imgae and video inputs
+ 
+ examples:
+ image classification
+ object detection
+ 
+ You can begin today and be ahead.
+ 
+ what are convolutional network
+ what type of layer, 
+ what is pooling
+ what is convulution in general
+ 
+ machine learning with iamges
+ 
+ processing inages with density connnected
+ 
+ 64 by 64
+ how many paramteres to sucessfuly optimized -- lot of parameters 
+ rgb imagesame process for 3 times
+ one for red, blue and green
+ how to reduce processing time, model genraliation 
+ combine features
+ parameters sharing
+ how we will combine feartures
+ convulution: series of weights
+ as that smaller boc goes acrsos the larger matrix within the 
+ redece feature size
+ 
+ depth
+ edge detection: vertical convolution 
+ problem 1
+ corner is invovled in only one operation and second, edges are involved in few 
+ we might lose some of the signal
+ 
+ solution: padding
+ zero padding. 
+ solution 2: stride, step size, how big the frame is. row by row. 
+ 
+ what about color: broken up the color and then combine
+ 
+ Pooling:
+ how do we go from 64 by 64 down to very small. identifies stong features, looking at different projects and
+ identifying for max value within that givne queaderant. 
+ 
+ http://bit.ly/jn-devfestdc18
+ model checkpoints from keras
+ keras: relu
+ 
+ dc convolutional neural network
+ data education dc, data science dc
+ 
+ 
+ 
+ 
