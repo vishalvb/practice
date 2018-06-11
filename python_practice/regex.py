@@ -12,7 +12,13 @@ mywebsite.com
 
 Meta characters needs to be escaped 
 301-549-9718
-123-456-1231
+123.456.1231
+
+cat
+mat
+bat
+
+
 
 Mr. Vishal Bahedia
 '''
@@ -50,7 +56,15 @@ for match in matches:
 
 	
 print('\n matching the phone number')
-pattern = re.compile(r'\d+.\d+.\d+')
+pattern = re.compile(r'\d+[.]\d+[.]\d+')
+matches = pattern.finditer(text)
+for match in matches:
+	print(match)
+
+	
+print('using ^ inside the [] will negate the operation')
+print(sentence)
+pattern = re.compile(r'[^b]at')
 matches = pattern.finditer(text)
 for match in matches:
 	print(match)
