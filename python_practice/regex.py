@@ -21,6 +21,10 @@ bat
 
 
 Mr. Vishal Bahedia
+Mr First Last
+Mrs Mfirst Mlast
+
+Mrs. Anyfirst Anylast
 '''
 
 
@@ -68,3 +72,33 @@ pattern = re.compile(r'[^b]at')
 matches = pattern.finditer(text)
 for match in matches:
 	print(match)
+
+	
+	
+print('\n matching the phone number')
+pattern = re.compile(r'\d{3}[.]\d{3}[.]\d{4}')
+matches = pattern.finditer(text)
+for match in matches:
+	print(match)
+
+print('\n matching names')
+pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*\s\w*')
+matches = pattern.finditer(text)
+for match in matches:
+	print(match)
+
+	
+	
+emails = '''
+vishalbahedia@gwmail.gwu.edu
+vishal4790@gmail.com
+vishal.bahedia@gwu.edu
+vishal@visha.com
+'''
+
+print('\n matching email Id')
+pattern = re.compile(r'[a-zA-z.0-9]+@[a-zA-z.]+(com|edu)')
+matches = pattern.finditer(emails)
+for match in matches:
+	print(match)
+
