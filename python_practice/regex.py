@@ -113,5 +113,35 @@ print('\nmatching urls')
 pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
 matches = pattern.finditer(urls)
 for match in matches:
+	print(match.group(0))
+
+print('subbed urls')
+#pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.sub(r'\2\3',urls)
+print(matches)
+print(type(matches))
+
+
+print('findall will only return the group')
+print('\n matching names')
+pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*\s\w*')
+matches = pattern.findall(text)
+for match in matches:
 	print(match)
 
+	
+print('match method will only search the start of the string')
+pattern = re.compile(r'start')
+matches = pattern.match(sentence)
+print(matches)
+
+print('search method will search the whole string')
+pattern = re.compile(r'sentence')
+matches = pattern.search(sentence)
+print(matches)
+
+
+print('re.IGNORECASE can be used to ignore the case')
+pattern = re.compile(r'Start', re.IGNORECASE)
+matches = pattern.search(sentence)
+print(matches)
