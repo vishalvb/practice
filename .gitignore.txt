@@ -1,1 +1,2 @@
 Intro_Data_Visualization_Pluralsight/0*
+*.csv
